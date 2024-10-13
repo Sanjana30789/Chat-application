@@ -7,6 +7,7 @@ const dbconnect = async()=>{
             useUnifiedTopology: true,
             serverSelectionTimeoutMS: 20000, // Timeout for server selection
             maxPoolSize: 10, 
+            socketTimeoutMS: 45000
         })
         .then(() => console.log('Connected to MongoDB'))
         .catch((error) => console.error('Error connecting to MongoDB:', error));

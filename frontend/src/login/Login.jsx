@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+
+
+
 const Login = () => {
 
     const navigate = useNavigate();
@@ -73,7 +76,7 @@ const Login = () => {
                                 required
                                 className='w-full input input-bordered h-10' />
                         </div>
-                        <button type='submit'
+                        <button type='submit' 
                             className='mt-4 self-center 
                             w-auto px-2 py-1 bg-gray-950 
                             text-lg hover:bg-gray-900 
