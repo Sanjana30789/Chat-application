@@ -1,8 +1,10 @@
 import mongoose from "mongoose";
 
+
+const dburl = "mongodb+srv://sanjana3029:San30shal@clusterone.xzohs.mongodb.net/?retryWrites=true&w=majority&appName=Clusterone"
 const dbconnect = async()=>{
     try {
-        await mongoose.connect(process.env.MONGODB_CONNECT,{
+        await mongoose.connect(dburl,{
             useNewUrlParser: true,
             useUnifiedTopology: true,
             serverSelectionTimeoutMS: 20000, // Timeout for server selection
